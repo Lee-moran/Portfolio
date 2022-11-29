@@ -5,6 +5,30 @@ body{
     background: #2c3e50;
 }
 
-.logo {
-    background: url("../images/LM.png");
+
+/* size of icon */
+.menuitem a i {
+    color: #020202;
+    font-size: 26px;
+    padding: 10px;
+}
+
+.menuitem span {
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
+.container{
+    background: white;
+    width: 85%;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 50px;
+    
 }
