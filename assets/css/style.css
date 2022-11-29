@@ -2,8 +2,22 @@
 
 body{
     font-family: 'Roboto', 'Exo' sans-serif;
-    background: #2c3e50;
+    background: #0e1217db;
 }
+
+h1{
+    font-family: 'Roboto';
+    color: white;
+    padding-top: 100px;
+}
+h3{
+    font-family: 'Exo';
+    color: white;
+}
+
+/* .box{
+    margin-top: 50px;
+} */
 
 .menuitem span {
     width: 100%;
@@ -14,14 +28,11 @@ body{
     letter-spacing: 2px;
 }
 
-.container{
-    background: white;
-    width: 85%;
+/* .container{
+    background: rgba(255, 255, 255, 0.237);
     height: 400px;
-    margin-left: 100px;
-    margin-top: 50px;
-    
-}
+
+} */
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -42,20 +53,21 @@ body{
 /* size of icon */
 
 .topnav{
-    height: 90px;
+    height: 108px;
 }
 
 .topnav a i {
     color: #020202;
-    font-size: 26px;
+    font-size: 30px;
     padding: 10px;
+    margin-top: 10px;
 } 
 
 /* Change the color of links on hover */
 .topnav-right a:hover {
   background-color: #ddd;
   color: black;
-  height: 90px;
+  height: 108px;
 }
 
 /* Add a color to the active/current link */
@@ -70,8 +82,8 @@ body{
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin-left: 40px;
 }
   
