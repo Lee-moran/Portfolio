@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #2c3e50;
+}
+
+.logo {
+    background: url("../images/LM.png");
+}
