@@ -113,7 +113,7 @@ h3{
 
 }
 
-.Me img{
+.Me-glitch img{
     border-radius: 20%;
     margin-top: 20px;
     
@@ -138,6 +138,8 @@ h3{
     opacity: .5;
     mix-blend-mode: hard-light;
     animation: glitch2 10s linear infinite;
+    border-radius: 20%;
+    margin-top: 20px;
 }
 
 .Me-glitch:hover:before {
