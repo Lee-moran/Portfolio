@@ -13,20 +13,53 @@
 </head>
 <body>
     <header>
-        <div class="topnav navbar-light bg-light">
-            <a class="menuitem" href="index.html">
-                <img class ="logo" src="./assets/images/LM_NB.png" alt="LM"></a>
-            <div class="topnav-right">
-                <a class="menuitem" href="#"><i class="fa fa-address-card"></i><span>About</span></a>
-                <a class="menuitem" href="#"><i class="fa fa-folder-open"></i><span>Portfolio</span></a>
-                <a class="menuitem" href="#"><i class="fa fa-file"></i><span>CV</span></a>
-                <a class="menuitem" href="#"><i class="fa fa-github"></i><span>GitHub</span></a>
-                <a class="menuitem" href="#"><i class="fa fa-commenting-o"></i><span>Contact</span></a>
-            </div>
-          </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/images/LM_NB.png" width="60" height="60" alt="">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">portfolio</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <section class="container">
+    <section class="home"> 
+        <div class="home__container bd-grid">
+            <h1 class="home__title"><span>HE</span><br>LLO</h1>
+
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+            </div>
+
+            <img src="" alt="" class="home__img">
+        </div>
+        </section>
+    <section class="about">about</section>
+    <section class="skills">skills</section>
+    <section class="portfolio">Portfolio</section>
+    <section class="contact">contact</section>
+    <footer>
+
+    </footer>
+    <!-- <section class="container">
         <div class="grid-container-element">
             <div class="grid-child-element purple">
                 <h1>Hi I'm Lee</h1>
@@ -36,18 +69,14 @@
             <div class="grid-child-element green">
                 <div class="Me"><img src="/assets/images/nobackground lee.png" alt="centered-image" style="width:60%;"></div>
             </div>
-            <video id="background-video" style="width: 100%;
-            height: auto;" autoplay loop muted poster="./assets/images/video.mp4"> 
+            <video id="background-video"  autoplay loop muted poster="./assets/images/video.mp4"> 
                 <source src="./assets/images/video.mp4" type="video/mp4">
                 </video>
             
         </div>
-        </section>
+    </section>
 
-        <section class="about">
-            <h1>about</h1>
-
-        </section>
+     -->
 
 </body>
 </html>
