@@ -121,7 +121,7 @@ li:hover {
 }
 .home__title{
     align-self: flex-end;
-    font-size: 100px;
+    font-size: 150px;
     color: white;
     line-height: .8;
     padding-top: 150px;
@@ -133,12 +133,14 @@ li:hover {
 .home__scroll{
     align-self: flex-end;
     padding-bottom: 2rem;
+    
 }
+
 .home__scroll-link{
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
-    font-size: 30px;
+    font-size: 20px;
 }
 .home__img{
     position: absolute;
@@ -158,3 +160,52 @@ img{
     margin-right: auto;
     width: 50%;
   }
+
+
+  .arrows {
+	width: 60px;
+	/* height: 72px; */
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	/* bottom: 20px; */
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
