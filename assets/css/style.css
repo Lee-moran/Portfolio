@@ -63,6 +63,9 @@ li:hover {
 
 .navbar{
     background-color: aqua;
+    width: 1400px;
+    position: fixed;
+    
 }
 
 
@@ -118,9 +121,11 @@ li:hover {
 }
 .home__title{
     align-self: flex-end;
-    font-size: 50px;
+    font-size: 100px;
     color: white;
     line-height: .8;
+    padding-top: 150px;
+    padding-left: 250px;
 }
 .home__title span{
     text-shadow: 0 20px 25px rgba(0,0,0,.5);
@@ -133,6 +138,7 @@ li:hover {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
+    font-size: 30px;
 }
 .home__img{
     position: absolute;
@@ -141,3 +147,14 @@ li:hover {
     width: 295px;
 }
 
+img{
+    border-radius: 50%;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
