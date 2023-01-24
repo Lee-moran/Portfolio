@@ -198,45 +198,12 @@ footer{
     width: 1500px;
 }
 
-
-
-
-
-
 .me{
     margin-left: 800px;
     height: 400px;
     width: 400px;
     
 }
-
-
-
-/* .Me img {
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    opacity: 0.7;
-    border-radius: 20%;
-    margin-top: 30px;
-}
-
-.Me img {
-    float: left;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-}
-
-.Me img:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    opacity: 1.0;
-}  */
 
 
 img{
@@ -304,25 +271,25 @@ img{
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
+
+/* porfolio  */
+
+
 #container {
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
     width:100%;
-    padding:20px 100px 100px 20px;
+    padding:50px;
 }
 #container>div {
     width: 300px;
-    height: 400px;
+    height: 300px;
     vertical-align: top;
     display: inline-block;
     *display: inline;
     zoom: 1;
     background:rgb(247, 245, 245);
-}
-span {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
+    margin-right: 30px;
+    margin-left: 10px;
 }
