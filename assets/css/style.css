@@ -65,8 +65,14 @@ li:hover {
     background-color: aqua;
     width: 1400px;
     position: fixed;
+    height: 80px;
     
 }
+
+.logo{
+    height: 120px;
+    width: 120px;
+ }
 
 
 
@@ -135,6 +141,11 @@ li:hover {
     padding-bottom: 2rem;
     
 }
+
+
+
+
+
 
 .home__scroll-link{
     writing-mode: vertical-lr;
