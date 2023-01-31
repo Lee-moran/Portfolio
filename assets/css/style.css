@@ -3,6 +3,8 @@
 body{
     font-family: 'Roboto', 'Exo' sans-serif;
     background-color: #01000100;
+    /* max-width: 1080px;  */
+
     
 }
 
@@ -23,14 +25,15 @@ h2{
     height: 70vh;
     color: rgb(245, 245, 245);
     font-size: 40px;
-    max-width: max-content;
+    max-width: 1080px;
 }
 
 video{
-    position:absolute;
-    left:0px;
-    top:0px;
+    /* position:absolute; */
+    /* left:0px;
+    top:0px; */
     opacity:0.8;/*optional for a cute view!*/
+    width: 100%;
 
 }
 .navbar-toggler{
@@ -38,8 +41,8 @@ video{
 }
 
 #background-video {
-    width: 1440px;
-    height: 70vh;
+    /* max-width: 1450px; */
+    /* height: 70vh; */
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -67,7 +70,7 @@ video{
 
 
 .nav-item {
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -137,7 +140,7 @@ li:hover {
 .about{
     background-color: rgb(252, 250, 250);
     /* height: 70vh; */
-    color: rgb(10, 10, 10);
+    color: rgba(0, 0, 0, 0.38);
     /* font-size: 40px; */
     display: flex;
     justify-content: space-around;
@@ -158,7 +161,7 @@ li:hover {
 
 /* Skills section  */
 .skills{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(130, 129, 129);
     height: 50vh;
     color: whitesmoke;
     font-size: 40px;
@@ -220,7 +223,7 @@ footer{
     
 }
 
-.center{
+/* .center{
     display:inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -228,7 +231,7 @@ footer{
     margin-top: 40px;
     overflow:auto;
 
-}
+} */
 
 
 /* arrows */
