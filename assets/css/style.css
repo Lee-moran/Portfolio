@@ -2,11 +2,11 @@
 
 body{
     font-family: 'Roboto', 'Exo' sans-serif;
-    background-color: #010001;
+    background-color: #01000100;
     
 }
 
-.fixed-nav-bar { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 50px; }
+.fixed-nav-bar { position: fixed; top: 20px; left: 20px; z-index: 9999; width: 100%; height: 50px; }
 
 h2{
     font-family: 'Exo';
@@ -15,8 +15,9 @@ h2{
 /* Home section  */
 .home{
     height: 70vh;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     font-size: 40px;
+    max-width: max-content;
 }
 
 video{
@@ -26,6 +27,10 @@ video{
     opacity:0.8;/*optional for a cute view!*/
 
 }
+.navbar-toggler{
+    color: #010001;
+}
+
 #background-video {
     width: 1450px;
     height: 70vh;
@@ -37,6 +42,7 @@ video{
     bottom: 0;
     z-index: -1;
 }
+
 
 .button {
     background-color: #4CAF50; /* Green */
@@ -51,18 +57,7 @@ video{
 }
 
 /* navbar  */
-.navbar{
-    background-color: rgb(244, 247, 247);
-    /* width: 1450px; */
-    position: fixed;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-    
-}
+
 
 .nav-item {
     width: 100%;
@@ -72,6 +67,15 @@ video{
     font-weight: 300;
     letter-spacing: 3px;
 } 
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
 
 a {
     color: #010001;
@@ -111,6 +115,14 @@ li:hover {
     text-shadow: 0 30px 35px rgba(0,0,0,.5);
 }
 
+
+
+@media only screen and (max-width: 600px) {
+    .homepage{
+        height: 50px;
+    }
+  }
+  
 /* About section  */
 .about{
     background-color: rgb(252, 250, 250);
