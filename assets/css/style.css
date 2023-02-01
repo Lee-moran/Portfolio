@@ -162,7 +162,7 @@ li:hover {
 /* Skills section  */
 .skills{
     background-color: rgb(130, 129, 129);
-    height: 50vh;
+    /* height: 50vh; */
     color: whitesmoke;
     font-size: 40px;
     padding: 30px;
@@ -179,9 +179,14 @@ li:hover {
     font-family: 'Exo';
 }
 
-.skills__container{
-    margin-left: 100px;
+.skills__box{
+    margin-left: 80px;
 }
+
+/* .skills__container{
+    margin-left: 150px;
+    
+} */
 
 .skills__subtitle{
     color: rgb(214, 8, 214);
@@ -197,11 +202,12 @@ li:hover {
 /* Portfolio section  */
 .portfolio{
     background-color: rgb(253, 246, 246);
-    /* height: 70vh; */
+    height: auto;
     color: rgb(5, 0, 0);
     /* font-size: 40px; */
     width: 1500px;
     padding: 25px;
+    padding-bottom:80px;
 }
 
 
@@ -363,7 +369,8 @@ footer{
     text-align: center;
     font-family: 'Exo';
   }
-  .text2 i {
+
+.text2 i {
     color: white;
     font-size: 40px;
     position: absolute;
@@ -376,16 +383,3 @@ footer{
 }
 
   
-  /* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
-    opacity: 1;
-  }
-
-
-.portfolio-title{
-    text-align: center;
-    padding-top: 20px;
-}
-
-
-
