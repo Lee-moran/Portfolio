@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 body{
-    font-family: 'Roboto', 'Exo' sans-serif;
+    font-family: 'Roboto', 'Exo' , 'Montserrat', sans-serif;
     background-color: #01000100;
-    /* max-width: 1080px;  */
-
+    max-width: 1080px; 
     
 }
-
 
 .fixed-nav-bar { position: fixed; top: 20px; left: 20px; z-index: 9999; width: 100%; height: 50px; }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat';
     
 }
 
-h2{
+.about h2{
+    font-family: 'Exo';
+    font-style: italic;
+    
+    color: black;
+}
+
+h3{
     font-family: 'Exo';
 }
+
 
 /* Home section  */
 .home{
@@ -29,20 +38,27 @@ h2{
 }
 
 video{
-    /* position:absolute; */
+    position:absolute;
     /* left:0px;
     top:0px; */
     opacity:0.8;/*optional for a cute view!*/
     width: 100%;
+    height: auto;
 
 }
 .navbar-toggler{
     color: #010001;
 }
 
+@media screen and (max-width: 300px) {
+    #background-video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 #background-video {
-    /* max-width: 1450px; */
-    /* height: 70vh; */
+    max-width: 1450px;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -50,11 +66,13 @@ video{
     top: 0;
     bottom: 0;
     z-index: -1;
+    height: auto;
 }
 
 
+
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #ff533d;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -66,8 +84,6 @@ video{
 }
 
 /* navbar  */
-
-
 
 .nav-item {
     max-width: 100%;
@@ -129,16 +145,9 @@ li:hover {
 }
 
 
-
-@media only screen and (max-width: 700px) {
-    .info{
-        font-size: 15px;
-    }
-  }
-  
 /* About section  */
 .about{
-    background-color: rgb(252, 250, 250);
+    background-color:#fffdfc;
     /* height: 70vh; */
     color: rgba(0, 0, 0, 0.38);
     /* font-size: 40px; */
@@ -146,6 +155,7 @@ li:hover {
     justify-content: space-around;
     padding: 80px;
     width: 1500px;
+    max-width: 1500px;
 }
 
 .about_img{
@@ -161,15 +171,16 @@ li:hover {
 
 /* Skills section  */
 .skills{
-    background-color: rgb(130, 129, 129);
+    background-color:#475c7a;
     /* height: 50vh; */
     color: whitesmoke;
     font-size: 40px;
     padding: 30px;
     width: 1500px;
+    text-align: left;
 }
 .section-title{
-    margin-left: 100px;
+    margin-left: 50px;
 }
 .btn{
     background-color: rgb(255, 255, 255);
@@ -183,10 +194,6 @@ li:hover {
     margin-left: 80px;
 }
 
-/* .skills__container{
-    margin-left: 150px;
-    
-} */
 
 .skills__subtitle{
     color: rgb(214, 8, 214);
@@ -201,43 +208,69 @@ li:hover {
 
 /* Portfolio section  */
 .portfolio{
-    background-color: rgb(253, 246, 246);
+    background-color:#fffdfc ;
     height: auto;
     color: rgb(5, 0, 0);
     /* font-size: 40px; */
     width: 1500px;
-    padding: 25px;
+    padding: 80px;
     padding-bottom:80px;
+    text-align: left;
+    font-family: 'Exo';
 }
-
 
 
 /* footer section  */
 
 footer{
-    background-color: #04AA6D;
+    background-color: #ff533d;
     height: 30vh;
     color: whitesmoke;
     font-size: 40px;
     width: 1500px;
+
+}
+
+.footer__title{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family: 'Exo';
+    color: whitesmoke;
+}
+
+.copyright{
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+.social{
+    font-size: 35px;
+    gap: 40px;
+}
+
+.footer_p{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    color: whitesmoke;
+}
+
+.footer__social{
+    color: white;
+    size: 5px;
+}
+.follow{
+    margin-top: 30px;
+    font-family: 'Exo';
+    color: whitesmoke;
 }
 
 
+
+/* #475c7a */
 
 .about img{
-    border-radius: 50%;
-    
+    border-radius: 50%;  
 }
-
-/* .center{
-    display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 40px;
-    overflow:auto;
-
-} */
 
 
 /* arrows */
@@ -289,15 +322,9 @@ footer{
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
-/* porfolio  */
 
-/* Float four columns side by side */
 .column {
-    /* float: left; */
-    width: 20%;
-    /* padding: 0 10px; */
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .column img{
     border-radius: 25px;
@@ -308,56 +335,40 @@ footer{
     margin: 0 -5px;
 }
 
-/* Clear floats after the columns */
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 
-/* Responsive columns */
-/* @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-} */
 
 
 .container {
     position: relative;
-    width: 50%;
-    /* max-width: 300px; */
-    margin-right: 0;
-}
-
-/* Make the image to responsive */
-.image {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .image {
     display: block;
     width: 100%;
     height: auto;
   }
   
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
+  .overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
-    width: 250px;
+    left: 10px;
+    right: 0;
     height: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
+    width: 81%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(108, 108, 108, 0.583);
+    border-radius: 10%;
+  }
+  
+.container:hover .overlay {
+    opacity: 1;
   }
 
-  .text {
+.text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -366,20 +377,23 @@ footer{
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
     font-family: 'Exo';
-  }
+}
 
-.text2 i {
-    color: white;
-    font-size: 40px;
+.text2 {
+    font-size: 30px;
     position: absolute;
     bottom:5%;
-    right: 10%;
+    right: 5%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+} 
+
+.porfolio__social{
+    color: white;
 }
 
   
