@@ -321,7 +321,7 @@ p {
 
 footer {
     background-color: #ff533d;
-    height: 30vh;
+    /* height: 30vh; */
     color: whitesmoke;
     font-size: 40px;
     width: 1500px;
@@ -370,7 +370,11 @@ footer {
     background-color: transparent;
 }
 
-
+.footer_p  a:hover {
+    color: #475c7a;
+    text-decoration: none;
+    background-color: transparent;
+}
 
 
 
@@ -454,4 +458,12 @@ footer {
 
 
 
-  
+@media only screen and (max-width:390px) {
+    p{
+        font-size: 13px;
+        margin-right: 790px;
+    }
+    .portfolio{
+        margin-right: auto;
+    }
+  }
