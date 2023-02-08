@@ -28,7 +28,7 @@ h3 {
     height: 70vh;
     color: rgb(245, 245, 245);
     font-size: 40px;
-    max-width: 1080px;
+    width: 1080px;
 }
 
 video {
@@ -150,8 +150,7 @@ li:hover {
     display: flex;
     justify-content: space-around;
     padding: 80px;
-    width: 1500px;
-    max-width: 1500px;
+    width: 1800px;
 }
 
 .about_img {
@@ -178,7 +177,6 @@ p {
 .about h2 {
     font-family: 'Exo';
     font-style: italic;
-
     color: black;
 }
 
@@ -191,7 +189,7 @@ p {
     color: whitesmoke;
     font-size: 40px;
     padding: 30px;
-    width: 1500px;
+    width: 1800px;
     text-align: left;
 }
 
@@ -229,7 +227,7 @@ p {
     height: auto;
     color: rgb(5, 0, 0);
     /* font-size: 40px; */
-    width: 1500px;
+    width: 1800px;
     padding: 80px;
     padding-bottom: 80px;
     text-align: left;
@@ -272,7 +270,7 @@ p {
     left: 10px;
     right: 0;
     height: 100%;
-    width: 81%;
+    width: 65%;
     opacity: 0;
     transition: .3s ease;
     background-color: rgba(108, 108, 108, 0.583);
@@ -326,7 +324,7 @@ footer {
     /* height: 30vh; */
     color: whitesmoke;
     font-size: 40px;
-    width: 1500px;
+    width: 1800px;
 
 }
 
