@@ -45,13 +45,6 @@ video {
     color: #010001;
 }
 
-@media screen and (max-width: 300px) {
-    #background-video {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 #background-video {
     /* width: 1450px; */
     object-fit: cover;
@@ -341,7 +334,7 @@ footer {
 }
 
 .social {
-    font-size: 35px;
+    font-size: 25px;
     gap: 40px;
 }
 
@@ -358,7 +351,7 @@ footer {
 }
 
 .follow {
-    margin-top: 30px;
+    margin-top: 25px;
     font-family: 'Exo';
     color: whitesmoke;
 }
@@ -458,9 +451,21 @@ footer {
 
 
 
-@media only screen and (max-width:390px) {
-    p{
-        font-size: 13px;
-        margin-right: 790px;
+@media only screen and (max-width:500px) {
+    .info h2,p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        margin-right: 1185px;
+        margin-left: 50px;
+        font-size: 15px;
+  }
+
+  @media only screen and (max-width:500px) {
+    .home__title {
+        font-size: 90px;
+        color: white;
+        line-height: .8;
+        padding-top: 71px;
+        padding-left: 150px;
     }
   }
