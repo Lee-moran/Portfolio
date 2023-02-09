@@ -85,6 +85,7 @@
         </div>
       </div>
     </section>
+
     <section class="skills" id="skills">
       <h2 class="section-title">Skills</h2>
       <div class="container-fluid">
@@ -266,16 +267,28 @@
     </section>
     <!------Banner-------->
     <section id="banner">
+      <video id="background-video" class="img-fluid"  autoplay loop muted poster="./assets/images/video.mp4"> 
+        <source src="./assets/images/video.mp4" type="video/mp4">
+      </video>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p class="promo-title">BarberSHOP</p>
-            <p>Book today</p>
-            <a href="#"><img src="/assets/images/LM-removebg-preview.png" class="play-btn">View Gallery</a>
+            <!-- <p class="promo-title"> </p> -->
+            <h1 class="home__title content"><span>lee</span><br>Moran
+            <button class="button">
+              Junior FullStack Developer
+            </button>
+            </h1>
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+           </svg>
+            <!-- <a href="#"><img src="/assets/images/LM-removebg-preview.png" class="play-btn">Junior Fullstack Software </a> -->
           </div>
-          <div class="col-md-6 text-center">
+          <!-- <div class="col-md-6 text-center">
             <img src="/assets/images/LM-removebg-preview.png" class="img-fluid">
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- <img src="" class="bottom-img">  breaker in page -->
@@ -288,15 +301,15 @@
         <h1 class="title text-center"> about</h1>
         <div class="row">
           <div class="col-md-6 about">
-            <p class="about-title"> Why!</p>
-            <p>My name is Lee and i have worked as a barber for over 5 years, 
-              offering a unique oportunity for those wishing to join my contact list and avail of 
-              a priviate one to one service </P>
-            <ul>
-              <li>One to One</li>
-              <li>No Queuing</li>
-              <li>Added Comfort</li>
-            </ul>
+            <h2 class="about-title">Hi i'm Lee </h2>
+            <p>Junior Software Developer with a Diploma in Full Stack Software Development from the Code Institute.
+              Proficient in HTML, CSS, Javascript, and Python. I have over 2 years of experience in Advertising, Customer
+              Service,and digital marketing.
+            </p>
+            <p>I am a valuable team player with strong communication skills and practical
+              problem-solving abilities. I am eager to gain entry into the tech industry and I look forward to
+              contributing and growing with a development team.
+            </p>
           </div>
           <div class="col-md-6">
             <img src="/assets/images/Lee pic 1 copy.jpeg" class="img-fluid about-img">
@@ -305,91 +318,142 @@
         </div>
       </div>
     </section>
-  
-
-    <!-- -----------------Services------3 rows ---------->
-     <section id="services">
-      <div class="container text-center">
-        <h1 class="title">Services</h1>
-        <div class="row text-center">
-          <div class="col-md-4 services">
-            <img src="/assets/images/bar.jpg" class="service-img">
-            <h4>Hair care</h4>
-            <p>sentence goes here</p>
-          </div>
-          <div class="col-md-4 services">
-            <img src="/assets/images/LM-removebg-preview.png" class="service-img">
-            <h4>Beard care</h4>
-            <p>sentence goes here</p>
-          </div>
-          <div class="col-md-4 services">
-            <img src="/assets/images/LM-removebg-preview.png" class="service-img">
-            <h4>Wash and restyle </h4>
-            <p>sentence goes here</p>
-          </div>
-        </div>
-        <button type="button" class="btn btn-primary"> Contact </button>
-      </div>
-    </section> 
-
-  
-    <!-----------Gallery---------->
-    <section id="gallery">
+    <!-------------------Skills---------->
+    <section id="skills">
       <div class="container">
-        <h1 class="title text-center">Gallery</h1>
-        <div class="row offset-1">
-          <div class="col-md-5 gallery">
-            <p>lee</p>
-            <img src="/assets/images/LM-removebg-preview.png">
-            <p class="user-details"> good feedback</p>
-          </div>
-          <div class="col-md-5 gallery">
-            <p>lee</p>
-            <img src="/assets/images/LM-removebg-preview.png">
-            <p class="user-details"> good feedback</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!----------social media----------------->
-    <section id="social-media">
-    <div class="container text-center">
-      <p>FIND US ON SOCIAL</p>
-      <div class="social-icons">
-        <a href="#"><img src="/assets/images/LM-removebg-preview.png" style="height: 80px;"></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="#"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
-    </section>
-    <!----------Footer----------------->
-    <section id="footer">
-      <!-- <img src="/assets/images/LM-removebg-preview.png" class="footer-img"> banner -->
-      <div class="container">
+        <h1 class="title text-center"> Skills</h1>
         <div class="row">
-          <div class="col-md-4 footer-box">
-            <img src="/assets/images/LM-removebg-preview.png">
-            <p>check</p>
+          <div class="col-md-6 skills">
+            <div class="skills__box">
+              <h3 class="skills__subtitle">Development</h3>
+              <button type="button" class="btn ">Html</button>
+              <button type="button" class="btn">Css</button>
+              <button type="button" class="btn">JavaScript</button>
+              <button type="button" class="btn">React</button>
+              <button type="button" class="btn">Python</button>
+  
+              <h3 class="skills__subtitle">Design</h3>
+              <button type="button" class="btn">Figma</button>
+              <button type="button" class="btn">Adobe</button>
+              <button type="button" class="btn">Canva</button>
+            </div>
           </div>
-          <div class="col-md-4 footer-box">
-            <p>Contact US</p>
-            <p><i class="fa-solid fa-location-dot"></i> Address</p>
-            <p><i class="fa-brands fa-instagram"></i> Instagram</p>
-            <p><i class="fa-regular fa-envelope"></i> Email</p>
+          <div class="col-md-6">
+            <div id="piechart" style="position:relative;bottom:70px;width: 400px; height: 300px;">
+
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+              <script type="text/javascript">
+                // Load google charts
+                google.charts.load('current', {
+                  'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(drawChart);
+
+                // Draw the chart and set the chart values
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['Design', 8],
+                    ['Html', 3],
+                    ['Java', 3],
+                    ['Python', 3],
+                    ['React', 3]
+                  ]);
+
+                  // Optional; add a title and set the width and height of the chart
+                  var options = {
+                    'title': '',
+                    'width': 650,
+                    'height': 400,
+                    "backgroundColor": { fill:'transparent' },
+                  };
+
+                  // Display the chart inside the <div> element with id="piechart"
+                  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                  chart.draw(data, options);
+                }
+              </script>
+            </div>
+
           </div>
-      
-        <div class="col-md-4 footer-box">
-          <p><b>Subscribe</b></p>
-          <input typye="email" class="form-control" placeholder="your email">
-          <button type="button" class="btn btn-primary">Subscribe</button>
         </div>
       </div>
-      <hr>
-      <p class="copyright">lee moran</p>
-    </div>
     </section>
+  
 
-   </body>
+    <!-- -----------------Portfolio---------------->
+     <section id="portfilio">
+       <div class="container text-center">
+         <h1 class="title">Portfilio</h1>
+         <div class="container-fluid portfolio">
+           <div class="row">
+             <div class="col-md-3">
+               <img src="/assets/images/1.png" alt="Finder responsive webite" style="width:250px; border-radius: 5%;">
+               <div class="overlay">
+                 <div class="text">Job Finder</div>
+                 <div class="text2"><a class="porfolio__social" href="https://github.com/Lee-moran/job_finder"
+                     target="_blank"><i class="fa-brands fa-github"></i></a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-3">
+               <img src="/assets/images/2.png" alt="PlanetEarth responsive webite"
+                 style="width:250px;border-radius: 5%;">
+               <div class="overlay">
+                 <div class="text">PlanetEarth</div>
+                 <div class="text2"><a class="porfolio__social" href="https://github.com/Lee-moran/Planet_Earth"
+                     target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+               </div>
+             </div>
+             <div class="col-md-3">
+               <img src="/assets/images/3.png" alt="Battleships responsive webite"
+                 style="width:250px;border-radius: 5%;">
+               <div class="overlay">
+                 <div class="text">BattleShips</div>
+                 <div class="text2"><a class="porfolio__social" href="https://github.com/Lee-moran/BattleShips"
+                     target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+               </div>
+             </div>
+             <div class="col-md-3">
+               <img src="/assets/images/4.png" alt="Quiz responsive webite" style="width:250px;border-radius: 5%;">
+               <div class="overlay">
+                 <div class="text">IQ Quiz</div>
+                 <div class="text2"><a class="porfolio__social" href="https://github.com/Lee-moran/IQ-Quiz-2021"
+                     target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+               </div>
+             </div>
+           </div>
+           </div>
+           </div>
+     </section>
+
+  
+    <!----------social and footer----------------->
+    <section id="social-media">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 social-icons">
+          <a href="#"><img src="/assets/images/LM-removebg-preview.png"></a>
+        </div>
+      <div class="col-md-4  social-icons">
+        <h1>FIND US ON SOCIAL</h1>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="col-md-4 ">
+        <h1>EXPLORE</h1>
+        <p class="footer_p">Downloadable CV here <a class="footer__social" 
+          href="/assets/images/Lee Moran Junior full-stack software developer CV.pdf" download> &nbsp&nbsp
+          <i class="fa-solid fa-file"></a></i>
+        </p>
+      </div>
+    </div>
+</section>
+</body>
 
 </html>
