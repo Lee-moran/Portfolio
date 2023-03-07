@@ -98,16 +98,17 @@ video {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 15px;
-    right: 0;
+    left: 25px;
+    right: 0px;
     height: 100%;
-    width: 90%;
+    width: 75%;
     opacity: 0;
     transition: .3s ease;
     background-color: rgba(108, 108, 108, 0.583);
     border-radius: 5%;
 }
-.overlay1 {
+
+/* .overlay1 {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -119,7 +120,7 @@ video {
     transition: .3s ease;
     background-color: rgba(222, 91, 91, 0.583);
     border-radius: 5%;
-}
+} */
 
 .container:hover .overlay {
     opacity: 1;
@@ -251,7 +252,7 @@ body{
       position:sticky;
       top: 0;
       z-index: 10;
-  }
+}
   
 .navbar{
       background-image: linear-gradient(to right, #fe5e5ed0,#9570f5);
