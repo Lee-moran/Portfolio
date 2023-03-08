@@ -2,7 +2,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 
-video {
+*
+{
+  margin: 0;
+  padding: 0;
+  
+}
+  
+body{
+      font-family: sans-serif;
+  }
+  
+/*-------NavBar-------*/
+#nav-bar{
+      position:sticky;
+      top: 0;
+      z-index: 10;
+}
+  
+.navbar{
+      background-image: linear-gradient(to right, #fe5e5ed0,#9570f5);
+      padding: 0;  /*!important! */
+  }
+  
+.navbar-brand img{
+      height: 90px;
+      padding-left: 10px;
+  }
+  
+.navbar-nav li{
+      padding: 0 10px;
+  
+  }
+
+.navbar-nav li:hover {
+    border-bottom: 2px solid #ff533d;
+
+}
+  
+.navbar-nav li a {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      color: white;
+  
+}
+
+.fa-bars{
+      color: white;
+      font-size: 30px;
+      
+  }
+  
+.navbar-toggler{
+      outline: none;
+}
+  
+/*-------Banner-------*/
+#banner{
+      color: aliceblue;
+      padding-top: 5%;
+      padding-bottom: 30px;
+    }
+  
+.promo-title{
+      font-size: 40px;
+      font-weight: 600;
+      margin-top: 100px;
+  }
+  
+.play-btn{
+      width: 45px;
+      margin: 20px;
+  }
+  
+#banner a{
+      color: aliceblue;
+      text-decoration: none;
+  }
+
+
+/*-------Video-------*/
+  video {
     opacity: 0.8;
 
 } 
@@ -42,6 +125,46 @@ video {
     text-shadow: 0 30px 35px rgba(0, 0, 0, .5);
 } 
 
+  
+  
+/*-------about-------*/
+#about{
+      padding-bottom: 50px;
+      padding-top: 50px;
+      background-image: linear-gradient(to right, #fe5e5e,#f570a1);
+  }
+  
+.title{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+  
+.about-title{
+      font-size: 40px;
+      font-weight: 400;
+      font-family: 'Roboto';
+  } 
+
+.about-title p{
+    font-family: 'Exo';
+  }
+  
+#about ul li{
+      margin: 10px 0;
+  }
+  
+#about ul{
+      margin-left: 20px;
+  }
+  
+.about-img {
+      display: inline-block;
+      margin-left: 67px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      width: 350px;
+  }
 
 /* Skills section  */
 
@@ -91,70 +214,188 @@ video {
     border: 1px solid transparent;
 } 
 
+/*-------Portfolio----------*/
 
+#portfilio{
+    padding: 10px;
+    background: #fe5e5e;
+  }
 
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 25px;
-    right: 0px;
-    height: 100%;
-    width: 75%;
-    opacity: 0;
-    transition: .3s ease;
-    background-color: rgba(108, 108, 108, 0.583);
-    border-radius: 5%;
+.containerm {
+    min-height: 30vh;
+    overflow: hidden;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
-/* .overlay1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 15px;
-    right: 0;
-    height: 100%;
-    width: 90%;
-    opacity: 0;
-    transition: .3s ease;
-    background-color: rgba(222, 91, 91, 0.583);
-    border-radius: 5%;
-} */
-
-.container:hover .overlay {
-    opacity: 1;
+.image {
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
+    transition: .5s;
+    background-color: #555
 }
 
-.text {
-    color: white;
-    font-size: 20px;
+.image:after {
+    content: '';
     position: absolute;
-    bottom: 8%;
-    left: 25%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-140%, -50%);
+    background-color: blue;
+    opacity: 0.8;
+    border-radius: 50%;
+    transition: .8s
+}
+
+.image:hover:after {
+    transform: translate(-50%, -50%)
+}
+
+.image:hover .portfilio {
+    transform: translate(-50%, -50%) scale(1.3) rotate(20deg)
+}
+
+.portfilio {
+    position: absolute;
+    height: 110%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: left;
-    font-family: 'Exo';
+    transition: .8s
 }
 
-.text2 {
-    font-size: 30px;
+.image i{
     position: absolute;
-    bottom: 5%;
-    right: 5%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2000px, -50%);
+    color: #fff;
+    transition: .8s;
+    transition-timing-function: ease-in;
+    font-size: 50px;
 }
 
-.text2 a:hover {
+.image:hover i {
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease;
+}  
+
+.image i:hover {
     color: #ff533d;
-    text-decoration: none;
-    background-color: transparent;
+}
 
+#portfilio h1{
+    padding-top: 20px;
+}
+
+  
+/*-------Footer & SOCIAL----------*/
+  
+#social-media{
+      background: #9570f5;
+      padding: 20px 0;
+  
+  }
+  
+#social-media h1{
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-family: 'Roboto';
+  }
+  
+.footer_p{
+    font-size: 16px;
+    margin-top: 60px;
+    font-family: 'Exo';
+  }
+  
+.social-icons i{
+      width: 80px;
+      transition: 0.5s;
+      font-size: 50px;
+      color: white;
+      margin-right: 20px;
+  }
+  
+.social-icons i{
+      margin-bottom: 30px;
+      transition: 0.5s;
+  }
+ 
+.social-icons a:hover i{
+      transform: translateY(-10px);
+      color: #fe5e5e;
+  }
+  
+.social-icons a:hover i{
+      transform: translateY(-10px);
+  }
+  
+  
+#footer{
+      background-image: linear-gradient(to right, #fe5e5e,#9570f5);
+      color: white;
+  
+  }
+  
+.social-icons img{
+      width: 120px;
+      padding-bottom: 60px;
+  }
+  
+.footer-box i{
+      margin-right: 8px;
+      font-size: 25px;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      padding-top: 7px;
+      border-radius: 2px;
+      background-image: linear-gradient(to right, #fe5e5e,#9570f5);
+  
+  }
+  
+.footer-box .form-control{
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      margin-top: 25px;
+      max-width: 250px;
+  
+  }
+  
+.footer-box .btn-primary{
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      margin-top: 30px;
+      background-image: linear-gradient(to right, #fe5e5e,#9570f5);
+  }
+
+.footer-img{
+    width: 150px;
+
+}
+
+.footer__social {
+    color: white;
+}
+
+.footer__social:hover{
+    color: #fe5e5e;
 }
 
 .portfilio__social {
@@ -163,14 +404,19 @@ video {
 
 
 
-/* arrows */
+
+
+
+
+
+/* --------arrows--------- */
 .arrows {
     width: 60px;
     height: 72px;
     position: absolute;
     left: 50%;
     margin-left: -30px;
-    margin-top: 70px;
+    margin-top: -92px;
 }
 
 .arrows path {
@@ -236,220 +482,4 @@ video {
     
 } 
 
-
-*
-  {
-  margin: 0;
-  padding: 0;
-  
-  }
-  
-body{
-      font-family: sans-serif;
-  }
-  
-#nav-bar{
-      position:sticky;
-      top: 0;
-      z-index: 10;
-}
-  
-.navbar{
-      background-image: linear-gradient(to right, #fe5e5ed0,#9570f5);
-      padding: 0;  /*!important! */
-  }
-  
-.navbar-brand img{
-      height: 90px;
-      padding-left: 10px;
-  }
-  
-.navbar-nav li{
-      padding: 0 10px;
-  
-  }
-
-.navbar-nav li:hover {
-    border-bottom: 2px solid #ff533d;
-
-}
-  
-  .navbar-nav li a {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 5px;
-      color: white;
-  
-  }
-  .fa-bars{
-      color: white;
-      font-size: 30px;
-      
-  }
-  
-  .navbar-toggler{
-      outline: none;
-  }
-  
-  /*-------Banner-------*/
-  #banner{
-      color: aliceblue;
-      padding-top: 5%;
-      padding-bottom: 30px;
-      
-  }
-  
-  .promo-title{
-      font-size: 40px;
-      font-weight: 600;
-      margin-top: 100px;
-  }
-  
-  .play-btn{
-      width: 45px;
-      margin: 20px;
-  }
-  
-  #banner a{
-      color: aliceblue;
-      text-decoration: none;
-  }
-  
-  
-  /*-------about-------*/
-  
-  #about{
-      /* background: #fe5e5e; */
-      padding-bottom: 50px;
-      padding-top: 50px;
-      background-image: linear-gradient(to right, #fe5e5e,#f570a1);
-  
-  }
-  .title{
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    padding-bottom: 30px;
-  }
-  
-  .about-title{
-      font-size: 40px;
-      font-weight: 400;
-      font-family: 'Roboto';
-  } 
-  .about-title p{
-    font-family: 'Exo';
-  }
-  
-  #about ul li{
-      margin: 10px 0;
-  }
-  
-  #about ul{
-      margin-left: 20px;
-  }
-  
-  .about-img {
-      display: inline-block;
-      margin-left: 67px;
-      margin-bottom: 10px;
-      border-radius: 50%;
-      width: 350px;
-  }
-  #portfilio{
-    padding: 50px;
-    background: #fe5e5e;
-  }
-
-  
-  /*-------Footer & SOCIAL----------*/
-  
-  #social-media{
-      background: #9570f5;
-      padding: 20px 0;
-  
-  }
-  
-  #social-media h1{
-      font-size: 26px;
-      font-weight: 600;
-      margin-bottom: 30px;
-      font-family: 'Roboto';
-  }
-  
-  .footer_p{
-    font-size: 16px;
-    margin-top: 60px;
-    font-family: 'Exo';
-  }
-  
-  .social-icons i{
-      width: 80px;
-      transition: 0.5s;
-      font-size: 50px;
-      color: white;
-      margin-right: 20px;
-  }
-  .social-icons img{
-      margin-bottom: 30px;
-      transition: 0.5s;
-  }
-  .social-icons a:hover img{
-      transform: translateY(-10px);
-  }
-  
-  .social-icons a:hover i{
-      transform: translateY(-10px);
-  }
-  
-  
-  #footer{
-      background-image: linear-gradient(to right, #fe5e5e,#9570f5);
-      color: white;
-  
-  }
-  
-  .social-icons img{
-      width: 120px;
-      padding-bottom: 60px;
-  }
-  
-  .footer-box i{
-      margin-right: 8px;
-      font-size: 25px;
-      height: 40px;
-      width: 40px;
-      text-align: center;
-      padding-top: 7px;
-      border-radius: 2px;
-      background-image: linear-gradient(to right, #fe5e5e,#9570f5);
-  
-  }
-  
-  .footer-box .form-control{
-      box-shadow: none;
-      border: none;
-      border-radius: 0;
-      margin-top: 25px;
-      max-width: 250px;
-  
-  }
-  
-  .footer-box .btn-primary{
-      box-shadow: none;
-      border: none;
-      border-radius: 0;
-      margin-top: 30px;
-      background-image: linear-gradient(to right, #fe5e5e,#9570f5);
-  }
-.footer-img{
-    width: 150px;
-
-}
-
-.footer__social {
-    color: white;
-}
-  
 
