@@ -133,6 +133,9 @@ body{
       padding-top: 50px;
       background-image: linear-gradient(to right, #fe5e5e,#f570a1);
   }
+.about{
+    margin-top: 40px;
+}
   
 .title{
     font-family: 'Montserrat';
@@ -163,7 +166,6 @@ body{
       margin-left: 67px;
       margin-bottom: 10px;
       border-radius: 50%;
-      width: 350px;
   }
 
 /* Skills section  */
@@ -401,9 +403,6 @@ body{
 .portfilio__social {
     color: white;
 } 
-
-
-
 
 
 
